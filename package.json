@@ -1,14 +1,15 @@
 {
-  "name": "socket-heartbeat",
-  "version": "0.0.0",
-  "description": "A simple complete heart-beat solution for node sockets",
-  "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "test": "mocha --compilers coffee:coffee-script/register"
   },
+  "dependencies": {
+    "ping-pong": "0.0.4",
+    "lodash.merge": "^2.4.1"
+  },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/jasonkuhrt/socket-heartbeat.git"
+    "url": "https://github.com/jasonkuhrt/socket-heartbeat.git",
+    "type": "git"
   },
   "keywords": [
     "heart-beat",
@@ -20,20 +21,19 @@
     "detection"
   ],
   "author": "Jason Kuhrt <jasonuhrt@me.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jasonkuhrt/socket-heartbeat/issues"
-  },
+  "name": "socket-heartbeat",
   "homepage": "https://github.com/jasonkuhrt/socket-heartbeat",
-  "dependencies": {
-    "lodash.merge": "^2.4.1",
-    "ping-pong": "0.0.4"
-  },
+  "version": "0.0.1",
+  "main": "index.js",
+  "description": "A simple complete heart-beat solution for node sockets",
   "devDependencies": {
-    "bluebird": "^2.3.10",
-    "chai": "^1.9.2",
     "coffee-script": "^1.8.0",
+    "chai": "^1.9.2",
+    "bluebird": "^2.3.10",
     "lodash": "^2.4.1",
     "mocha": "^2.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/jasonkuhrt/socket-heartbeat/issues"
   }
 }
