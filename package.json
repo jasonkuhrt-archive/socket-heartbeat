@@ -1,0 +1,39 @@
+{
+  "name": "socket-heartbeat",
+  "version": "0.0.1",
+  "description": "A simple complete heart-beat solution for node sockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonkuhrt/socket-heartbeat.git"
+  },
+  "keywords": [
+    "heart-beat",
+    "ping-pong",
+    "socket",
+    "connection",
+    "heartbeat",
+    "broken",
+    "detection"
+  ],
+  "author": "Jason Kuhrt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jasonkuhrt/socket-heartbeat/issues"
+  },
+  "homepage": "https://github.com/jasonkuhrt/socket-heartbeat",
+  "dependencies": {
+    "lodash.merge": "^2.4.1",
+    "ping-pong": "0.0.4"
+  },
+  "devDependencies": {
+    "bluebird": "^2.3.10",
+    "chai": "^1.9.2",
+    "coffee-script": "^1.8.0",
+    "lodash": "^2.4.1",
+    "mocha": "^2.0.1"
+  }
+}
