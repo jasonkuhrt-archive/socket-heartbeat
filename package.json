@@ -19,7 +19,7 @@
     "broken",
     "detection"
   ],
-  "author": "Jason Kuhrt",
+  "author": "Jason Kuhrt <jasonuhrt@me.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jasonkuhrt/socket-heartbeat/issues"
