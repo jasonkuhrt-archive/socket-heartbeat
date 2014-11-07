@@ -23,7 +23,7 @@
   "author": "Jason Kuhrt <jasonuhrt@me.com>",
   "name": "socket-heartbeat",
   "homepage": "https://github.com/jasonkuhrt/socket-heartbeat",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "description": "A simple complete heart-beat solution for node sockets",
   "devDependencies": {
