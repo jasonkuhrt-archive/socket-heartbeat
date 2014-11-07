@@ -53,3 +53,8 @@ describe.only 'socket-heartbeat', ->
     .then(lo.flatten)
     .then (datas)->
       eq datas.map((x)-> x.toString()), lo.range(4).map -> 'PROBE'
+
+
+  it 'when client exits pinpong mode event handlers unbinded'
+  it 'if socket is in flowing mode data-event type used is "data"'
+  it 'if socket isnt in flowing mode data-event type used is "readable"'
