@@ -29,7 +29,7 @@ module.exports = function socketHeartbeat(socket, config){
     var timer = pingpong(config.interval_ms, config.probe_count, ping, onFlatline)
 
     socket.once('close', exit)
-    socket.on((config.is_flowing ? 'data', 'readable'), onPulse)
+    socket.on((config.is_flowing ? 'data' : 'readable'), onPulse)
 
     function ping(probesLeft) {
       config.send_probe(socket, probesLeft)
