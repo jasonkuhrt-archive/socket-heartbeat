@@ -6,6 +6,7 @@ var pingpong = require('ping-pong')
 var defaults = {
   idle_ms: 5000,
   interval_ms: 10000,
+  is_flowing: false,
   probe_count: 3,
   send_probe: function(){
     console.warn('socket-heartbeat requires a "send_probe" implementation')
@@ -28,7 +29,7 @@ module.exports = function socketHeartbeat(socket, config){
     var timer = pingpong(config.interval_ms, config.probe_count, ping, onFlatline)
 
     socket.once('close', exit)
-    socket.on('readable', onPulse)
+    socket.on((config.is_flowing ? 'data', 'readable'), onPulse)
 
     function ping(probesLeft) {
       config.send_probe(socket, probesLeft)
